@@ -9,7 +9,6 @@ def capacidade_mochila(numero_itens, pesos, valores, capacidade):
 #preenche tabela
     for linha in range(1, numero_itens + 1):
         for coluna in range(1, capacidade + 1):
-            print(pesos[linha - 1], coluna)
             if pesos[linha - 1] <= coluna: #calcula apenas se o peso for menor ou igual que o capacidade 
                 calcula += 1
                 valor_linha_anterior_tabela = tabela_valor_maximo[linha - 1][coluna]
